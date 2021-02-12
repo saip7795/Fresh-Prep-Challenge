@@ -21,12 +21,12 @@ class Location < ApplicationRecord
 	end
 
 	def check_polygon1
-		return polygon1.contains?(point) unless point.blank?
-		return "Location not detected"
+		return polygon1.contains?(point) unless (point.blank? || polygon1.blank?) 
+		return "Location not detected / polygon1 is not a closed polygon"
 	end
 
 	def check_polygon2
-		return polygon2.contains?(point) unless point.blank?
-		return "Location not detected"
+		return polygon2.contains?(point) unless (point.blank? || polygon2.blank?)
+		return "Location not detected / polygon1 is not a closed polygon"
 	end
 end
