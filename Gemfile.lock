@@ -76,7 +76,7 @@ GEM
     crass (1.0.6)
     erubi (1.10.0)
     ffi (1.14.2)
-    geocoder (1.6.4)
+    geocoder (1.6.5)
     geokit (1.13.1)
     geokit-rails (2.3.2)
       geokit (~> 1.5)
@@ -226,7 +226,7 @@ DEPENDENCIES
   webpacker (~> 4.0)
 
 RUBY VERSION
-   ruby 2.5.1p57
+   ruby 2.7.1p83
 
 BUNDLED WITH
    2.1.4
